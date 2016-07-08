@@ -63,6 +63,7 @@ body {
 footer {
     width: 80%;
     margin: auto;
+    margin-top: 60px;
 }
 
 footer .glyphicon-circle-arrow-up {
@@ -137,6 +138,10 @@ blockquote cite:before {
   font-weight: 300;
   line-height: 1;
   letter-spacing: -1px;
+}
+
+.contents-div {
+    min-height: 400px;
 }
 
 
