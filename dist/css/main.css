@@ -60,6 +60,14 @@ body {
   height: 500px;
 }
 
+footer {
+    width: 80%;
+    margin: auto;
+}
+
+footer .glyphicon-circle-arrow-up {
+    font-size: 30px;
+}
 
 /* quotes-div CONTENT
 -------------------------------------------------- */
