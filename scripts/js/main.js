@@ -1,5 +1,7 @@
 $(function() {
 
+    $('a[title]').tooltip();
+
     $('div.contents-div').each(function(){
          $(this).hide();
         if($(this).attr('id') === 'homePage') {
