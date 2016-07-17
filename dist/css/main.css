@@ -82,7 +82,7 @@ body {
 footer {
     width: 80%;
     margin: auto;
-    margin-top: 100px;
+    margin-top: 200px;
 }
 
 footer .glyphicon-circle-arrow-up {
@@ -160,8 +160,12 @@ footer .glyphicon-circle-arrow-up {
 ------------------------- */
 
 .featurette-divider {
-    margin: 80px 0;
+    margin: 20px 0;
     /* Space out the Bootstrap <hr> more */
+}
+
+.featurette-small-divider {
+    margin: 20px 0;
 }
 
 
@@ -396,9 +400,9 @@ span.round-tabs.black-round {
 }
 
 li.active span.round-tabs {
-    background-color: white;
+    background-color: #5cb85c;
     border: 2px solid black;
-    color: black;
+    color: white;
     transform: scale(1.2, 1.2);
 }
 
@@ -518,6 +522,23 @@ li.active span.round-tabs {
     .btn-outline-rounded {
         padding: 12px 20px;
     }
+
+    .image-icon {
+        font-size: 125px;
+    }
+
+    .image-icon.two-icons.smaller-icon {
+        font-size: 100px;
+    }
+
+    .image-icon.three-icons.smaller-icon {
+        font-size: 100px;
+    }
+
+    .image-icon.three-icons.smallest-icon {
+        font-size: 75px;
+    }
+
 }
 
 .btn.btn-primary.btn-chess {
@@ -530,4 +551,331 @@ li.active span.round-tabs {
 .course-content {
     font-size: 1.2em;
     line-height: 2em
+}
+
+
+
+
+
+@-webkit-keyframes flash-letter{
+    0%{opacity:0.35}
+    30%{opacity:0.8}
+    40%{opacity:0.45}
+    100%{opacity:0.21}
+}
+
+@-moz-keyframes flash-letter{
+    0%{opacity:0.35}
+    30%{opacity:0.8}
+    40%{opacity:0.45}
+    100%{opacity:0.21}
+}
+
+@-o-keyframes flash-letter{
+    0%{opacity:0.35}
+    30%{opacity:0.8}
+    40%{opacity:0.45}
+    100%{opacity:0.21}
+}
+
+keyframes flash-letter{
+    0%{opacity:0.35}
+    30%{opacity:0.8}
+    40%{opacity:0.45}
+    100%{opacity:0.21}
+}
+
+
+.name-logo span {
+    -webkit-animation: flash-letter 3.2s infinite ease;
+    -moz-animation: flash-letter 3.2s infinite ease;
+    -o-animation: flash-letter 3.2s infinite ease;
+    animation: flash-letter 3.2s infinite ease;
+    opacity: 0.35;
+    padding-right: 10px;
+    color: #8a6d3b;
+    font-size: 30px;
+}
+
+.name .A {
+    -webkit-animation-delay: 0;
+    -moz-animation-delay: 0;
+    -o-animation-delay: 0;
+    animation-delay: 0;
+}
+
+.name .R {
+    -webkit-animation-delay: 100ms;
+    -moz-animation-delay: 100ms;
+    -o-animation-delay: 100ms;
+    animation-delay: 100ms;
+}
+
+.name .U {
+    -webkit-animation-delay: 200ms;
+    -moz-animation-delay: 200ms;
+    -o-animation-delay: 200ms;
+    animation-delay: 200ms;
+}
+
+.name .N {
+    -webkit-animation-delay: 300ms;
+    -moz-animation-delay: 300ms;
+    -o-animation-delay: 300ms;
+    animation-delay: 300ms;
+}
+
+.name .A2 {
+    -webkit-animation-delay: 400ms;
+    -moz-animation-delay: 400ms;
+    -o-animation-delay: 400ms;
+    animation-delay: 400ms;
+    padding-right: 15px;
+}
+
+.name .D {
+    -webkit-animation-delay: 500ms;
+    -moz-animation-delay: 500ms;
+    -o-animation-delay: 500ms;
+    animation-delay: 500ms;
+}
+
+.name .I {
+    -webkit-animation-delay: 600ms;
+    -moz-animation-delay: 600ms;
+    -o-animation-delay: 600ms;
+    animation-delay: 600ms;
+}
+
+.name .N2 {
+    -webkit-animation-delay: 700ms;
+    -moz-animation-delay: 700ms;
+    -o-animation-delay: 700ms;
+    animation-delay: 700ms;
+}
+
+.name .A3 {
+    -webkit-animation-delay: 800ms;
+    -moz-animation-delay: 800ms;
+    -o-animation-delay: 800ms;
+    animation-delay: 800ms;
+}
+
+.name .K {
+    -webkit-animation-delay: 900ms;
+    -moz-animation-delay: 900ms;
+    -o-animation-delay: 900ms;
+    animation-delay: 900ms;
+}
+
+.name .A4 {
+    -webkit-animation-delay: 1000ms;
+    -moz-animation-delay: 1000ms;
+    -o-animation-delay: 1000ms;
+    animation-delay: 1000ms;
+}
+
+.name .R2 {
+    -webkit-animation-delay: 1100ms;
+    -moz-animation-delay: 1100ms;
+    -o-animation-delay: 1100ms;
+    animation-delay: 1100ms;
+}
+
+.name .A5 {
+    -webkit-animation-delay: 1200ms;
+    -moz-animation-delay: 1200ms;
+    -o-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+
+
+@-webkit-keyframes flash-camera{
+    0%{-webkit-transform: scale3d(1.1, 1.1, 1.1) ;
+        opacity: 0.85;
+    }
+    50%{-webkit-transform: scale3d(0.95, 0.95, 1) ;
+        opacity: 1;text-shadow: 0 0 4px #000;
+    }
+    100%{-webkit-transform: scale3d(1.1, 1.1, 1.1) ;
+        opacity: 0.85;
+    }
+}
+
+@-moz-keyframes flash-camera{
+    0%{
+        -moz-transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 0px, 0);
+        opacity: 0.85;
+    }
+    50%{
+        -moz-transform: scale3d(0.95, 0.95, 1) translate3d(-1px, -2px, 0);
+        opacity: 1;text-shadow: 0 0 4px #000;
+    }
+    100%{
+        -moz-transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 0px, 0);
+        opacity: 0.85;
+    }
+}
+
+@-o-keyframes flash-camera{
+    0%{
+        -o-transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 0px, 0);
+        opacity: 0.85;
+    }
+    50%{
+        -o-transform: scale3d(0.95, 0.95, 1) translate3d(-1px, -2px, 0);
+        opacity: 1;text-shadow: 0 0 4px #000;
+    }
+    100%{
+        -o-transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 0px, 0);
+        opacity: 0.85;
+    }
+}
+
+keyframes flash-camera{
+    0%{
+        ms-transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 0px, 0);
+        transform: scale3d(1.1, 1.1, 1.1) translate3d(0, 0px, 0);
+        opacity: 0.85;
+    }
+    50%{
+        ms-transform: scale3d(0.95, 0.95, 1) translate3d(-1px, -2px, 0);
+        transform: scale3d(0.95, 0.95, 1) translate3d(-1px, -2px, 0);
+        opacity: 1;text-shadow: 0 0 4px #000;
+    }
+    100%{
+        ms-transform: scale3d(1.1, 1.1, 1.1) ;
+        transform: scale3d(1.1, 1.1, 1.1) ;
+        opacity: 0.85;
+    }
+}
+
+.name.name-logo span.glyphicon-facetime-video{
+    -webkit-animation: flash-camera 3.2s infinite ease;
+    -moz-animation: flash-camera 3.2s infinite ease;
+    -o-animation: flash-camera 3.2s infinite ease;
+    animation: flash-camera 3.2s infinite ease;
+    color: black;
+    -webkit-animation-delay: 1200ms;
+    -moz-animation-delay: 1200ms;
+    -o-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+
+
+p.attention-para {
+    font-size: 16px;
+}
+
+p.attention-para span {
+    color: red;
+}
+
+blockquote p.lead > span {
+    font-style: italic;
+    padding-right: 10px;
+}
+
+.icon-rotate-45 {
+    -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(45deg);
+    -ms-transform: rotate(45deg);
+    -o-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.icon-rotate-25 {
+    -webkit-transform: rotate(25deg);
+    -moz-transform: rotate(25deg);
+    -ms-transform: rotate(25deg);
+    -o-transform: rotate(25deg);
+    transform: rotate(25deg);
+}
+
+.image-icon {
+    text-align: center;
+}
+
+.image-icon.two-icons, .image-icon.three-icons {
+    display: inline-block;
+}
+
+/*.image-icon.three-icons {
+    -webkit-animation: flash-camera 5s infinite ease;
+    -moz-animation: flash-camera 5s infinite ease;
+    -o-animation: flash-camera 5s infinite ease;
+    animation: flash-camera 5s infinite ease;
+}*/
+
+.queen-icon {
+    color: rgba(169, 66, 66, 0.84);
+    position: relative;
+    top: -40px;
+    text-shadow: 2px 2px 0px #5a5a5a;
+}
+
+.knight-icons .smallest-icon {
+    -webkit-animation-delay: 1200ms;
+    -moz-animation-delay: 1200ms;
+    -o-animation-delay: 1200ms;
+    animation-delay: 1200ms;
+}
+
+.knight-icons .smaller-icon {
+    -webkit-animation-delay: 1800ms;
+    -moz-animation-delay: 1800ms;
+    -o-animation-delay: 1800ms;
+    animation-delay: 1800ms;
+}
+
+.knight-icons .first-icon {
+    -webkit-animation-delay: 2400ms;
+    -moz-animation-delay: 2400ms;
+    -o-animation-delay: 2400ms;
+    animation-delay: 2400ms;
+}
+
+.chess-list li {
+    font-size: 18px;
+    padding-top: 20px;
+    list-style-type: circle;
+}
+
+.chess-list-2 li {
+    font-size: 16px;
+    padding-top: 20px;
+}
+
+.panel-success>.panel-heading {
+    color: #3c763d;
+    background-color: #5cb85c;
+    border-color: #5cb85c;
+}
+
+.panel-success>.panel-heading {
+    color: white;
+}
+
+@media( min-width: 585px) {
+    .image-icon {
+        font-size: 225px;
+        text-align: center;
+    }
+
+    .image-icon.two-icons, .image-icon.three-icons {
+        display: inline-block;
+    }
+
+    .image-icon.two-icons.smaller-icon {
+        font-size: 150px;
+    }
+
+    .image-icon.three-icons.smaller-icon {
+        font-size: 175px;
+    }
+
+    .image-icon.three-icons.smallest-icon {
+        font-size: 125px;
+    }
+
 }
