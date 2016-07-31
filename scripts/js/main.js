@@ -1,5 +1,8 @@
 $(function() {
 
+    var globals = {};
+    globals.addressText = 'Aruna Dinakara,<br>#31, "Skanda",<br>1st A Cross, Silver Oak Street,<br>JP Nagar 7th Phase,<br>Bangalore-560078';
+
     $('a[title]').tooltip();
 
     $('div.contents-div').each(function(){
@@ -29,5 +32,33 @@ $(function() {
         $(this).addClass('active');
 
     });
+
+    /*function typeAddressInfo(){
+        var dest = $('#addressInfo');
+        if (dest)
+        {
+            var text = '';
+            if(globals.addressText[globals.currentChar-1] === '<'){
+                text = globals.addressText.substr(0, globals.currentChar+3);
+                globals.currentChar += 4;
+            }
+            else{
+                text = globals.addressText.substr(0, globals.currentChar);
+                globals.currentChar++ ;
+            }
+            dest.html(text);
+
+            if (globals.currentChar <= globals.addressText.length)
+            {
+                setTimeout(typeAddressInfo, 20);
+            }
+        }
+    }
+
+
+    $('body').on( 'click', '#contactsLink', function(e) {
+        globals.currentChar = 1;
+        typeAddressInfo();
+    });*/
 
 });
