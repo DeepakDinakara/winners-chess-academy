@@ -33,6 +33,21 @@ $(function() {
 
     });
 
+    $('#knowMore').on('click', function(e) {
+        e.preventDefault();
+        $('a[href=#vision]').click();
+    });
+
+    $('#knowAboutMe').on('click', function(e) {
+        e.preventDefault();
+        $('a[href=#aboutme]').click();
+    });
+
+    $('#signUpToday').on('click', function(e) {
+        e.preventDefault();
+        $('a[href=#contact]').click();
+    });
+
     /*function typeAddressInfo(){
         var dest = $('#addressInfo');
         if (dest)
